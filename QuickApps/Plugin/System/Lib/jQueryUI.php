@@ -126,7 +126,7 @@ class jQueryUI {
 		$rootJS = ROOT . DS . 'webroot' . DS . 'js' . DS;
 
 		if (!empty($files)) {
-			if (is_writable($rootJS)) {
+			if (is_writable($rootJS) && !Configure::read('Cache.disable')) {
 				$cache = '';
 				$source = CakePlugin::path('System') . 'webroot' . DS . 'js' . DS . 'ui' . DS;
 
