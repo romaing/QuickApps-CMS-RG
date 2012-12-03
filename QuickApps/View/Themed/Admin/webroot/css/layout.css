@@ -71,3 +71,9 @@ body.login legend { display:none; }
 	text-shadow:#FFFFFF 0 -1px 1px;
 }
 img.theme_tn { border:1px solid #ccc; }
+
+#NodeAdminEditForm .field-container,
+#NodeAdminEditForm .field-container DIV {
+    display: inline-block;
+    width: 100%;
+}
